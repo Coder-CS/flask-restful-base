@@ -1,20 +1,15 @@
-from flask import Flask
-from flask_restful import Api, Resource, reqparse
+from app.config import config
+from app import create_app
+import click
 
-app = Flask(__name__)
-api = Api(app)
-parser = reqparse.RequestParser()
+app = create_app(config.get("ENV", "dev"))
 
-class Test(Resource):
-    def get(self):
-        return {"username": "hhahaha"}
 
-@app.route('/')
-def hello_world():
-    return 'Hello World!'
-
-api.add_resource(Test, '/test', endpoint='/t')
+@app.cli.command("print-user")
+@click.argument("name")
+def print_user(name):
+    print(f"this is {name}")
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
