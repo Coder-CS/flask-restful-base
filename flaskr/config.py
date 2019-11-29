@@ -19,7 +19,7 @@ class ConfigBase:
     # Redis
     REDIS_HOST = env.get("REDIS_HOST", 'http://localhost')
     REDIS_PORT = env.get("REDIS_PORT", 6379)
-    REDIS_PASSWORD = env.get("REDIS_PASSWORD", '')
+    REDIS_PASSWORD = env.get("REDIS_PASSWORD", None)
     REDIS_POOL_DB = env.get("REDIS_POOL_DB", 0)
 
 class DevelopmentConfig(ConfigBase):
