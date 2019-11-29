@@ -1,15 +1,22 @@
-from app.config import config
-from app import create_app
+from flaskr.config import env
+from flaskr import create_app
 import click
 
-app = create_app(config.get("ENV", "dev"))
+from flaskr.err import InvalidUsage
 
 
-@app.cli.command("print-user")
+app = create_app()
+
+
+# @app.errorhandler(InvalidUsage)
+# def handle_invalid_usage(error: InvalidUsage):
+#     response = jsonify(error.to_dict())
+#     response.status_code = error.status_code
+#     return response
+
+
+@app.cli.command("create-db")
 @click.argument("name")
 def print_user(name):
     print(f"this is {name}")
 
-
-if __name__ == '__main__':
-    app.run()
