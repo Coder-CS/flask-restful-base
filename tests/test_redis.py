@@ -9,6 +9,7 @@ redis_config = {
 }
 
 
+# @unittest.skip("打开Redis再测试")
 class RedisTestCase(unittest.TestCase):
 
     def setUp(self) -> None:
