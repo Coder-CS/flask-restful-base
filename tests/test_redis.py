@@ -18,15 +18,15 @@ class RedisTestCase(unittest.TestCase):
         self.db.pool.disconnect()
 
     def test_save_get(self):
-        self.db.save(1, "a")
-        self.db.save("1", "b")
+        self.db.set(1, "a")
+        self.db.set("1", "b")
         b = self.db.get(1)
         c = self.db.get("1")
         assert b == "b"
         assert b == c
 
     def test_delete(self):
-        self.db.save(3, "3a")
+        self.db.set(3, "3a")
         self.db.delete(3)
         self.db.delete(3)
         self.db.delete(3)
