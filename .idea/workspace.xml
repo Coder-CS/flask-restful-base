@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c75c0b72-c9d7-430a-929a-3926ba4286c7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/flaskr/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/config.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flaskr/apis/ApiBase.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskr/apis/UserApi.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/apis/UserApi.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskr/apis/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/apis/__init__.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -111,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575023480863</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="修改redis的配置">
+      <created>1575024011977</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1575024011977</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
