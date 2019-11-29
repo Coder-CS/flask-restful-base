@@ -11,8 +11,7 @@ redis_config = {
     "host": config.REDIS_HOST,
     "port": config.REDIS_PORT,
     "db": config.REDIS_POOL_DB,
-    "password": config.REDIS_PASSWORD,
-    "decode_responses": True
+    "password": config.REDIS_PASSWORD
 }
 redis_db = RedisDB(**redis_config)
 
