@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c75c0b72-c9d7-430a-929a-3926ba4286c7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flaskr/redis_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/redis_db.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_redis.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_redis.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -142,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575033402994</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="修改单元测试">
+      <created>1575034612537</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1575034612537</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -162,6 +170,7 @@
     <MESSAGE value="添加api" />
     <MESSAGE value="修改redis的配置" />
     <MESSAGE value="修改redis pool" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改redis pool" />
+    <MESSAGE value="修改单元测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改单元测试" />
   </component>
 </project>
