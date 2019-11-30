@@ -4,7 +4,7 @@ from pathlib import Path
 
 path = Path()
 root_path = path.parent
-config_path = root_path.joinpath("setting.json")
+config_path = root_path.joinpath(".env")
 
 env = {"ENV": "dev"}
 if config_path.exists():
