@@ -4,7 +4,7 @@ from pathlib import Path
 
 path = Path()
 root_path = path.parent
-config_path = root_path.joinpath("config.json")
+config_path = root_path.joinpath("setting.json")
 
 env = {"ENV": "dev"}
 if config_path.exists():
@@ -12,7 +12,7 @@ if config_path.exists():
         env = {**env, **json.load(fp)}
 
 
-class ConfigBase:
+class ConfigBase(object):
     APP_NAME = env.get("APP_NAME", 'flask-end-base')
     SECRET_KEY = env.get("SECRET_KEY", 'YOU_SHOULD_SET_KEY')
     SQLALCHEMY_TRACK_MODIFICATIONS = True

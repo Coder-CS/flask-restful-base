@@ -1,8 +1,11 @@
+
+__version__ = "0.1.1"
+
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-from flaskr.config import configs, env
-from flaskr.apis import UserApi
-from flaskr.redis_db import RedisDB
+from app.config import configs, env
+from app.apis import UserApi
+from app.redis_db import RedisDB
 
 config_name = env.get("ENV", "dev")
 config = configs.get(config_name)
@@ -30,5 +33,5 @@ def create_app() -> Flask:
 
 
 def register_api(app: Flask):
-    UserApi.register(app, "users", "/users/", "id", "int")
+    UserApi.register(app)
 

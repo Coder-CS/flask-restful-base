@@ -1,8 +1,17 @@
 import redis
 
 
-class RedisDB:
+class RedisDB(object):
+    """对 redis 封装.
+
+        用于操作 redis.
+
+    """
     def __init__(self, **connection_kwargs):
+        """ 初始化.
+
+        :param connection_kwargs: 需要四个参数 ip, port, password, db
+        """
         connection_kwargs["decode_responses"] = True
         self.__pool = redis.ConnectionPool(**connection_kwargs)
         self.__redis = redis.Redis(connection_pool=self.__pool)

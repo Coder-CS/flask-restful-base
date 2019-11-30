@@ -1,8 +1,8 @@
+import datetime
 from flask_sqlalchemy import SQLAlchemy
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer, SignatureExpired, BadSignature
 from werkzeug.security import check_password_hash, generate_password_hash
-import datetime
-from flaskr import db
+from app import db
 
 
 class User(db.Model):

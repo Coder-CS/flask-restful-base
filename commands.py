@@ -1,8 +1,8 @@
-from flaskr.config import env
-from flaskr import create_app
+from app.config import env
+from app import create_app
 import click
 
-from flaskr.err import InvalidUsage
+from app.err import InvalidUsage
 
 
 app = create_app()
