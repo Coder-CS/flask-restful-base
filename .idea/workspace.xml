@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c75c0b72-c9d7-430a-929a-3926ba4286c7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/apis/ApiBase.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/apis/ApiBase.py" afterDir="false" />
-    </list>
+    <list default="true" id="c75c0b72-c9d7-430a-929a-3926ba4286c7" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +160,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575091013534</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="修改 apis 注释">
+      <created>1575091412140</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1575091412140</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -184,6 +189,7 @@
     <MESSAGE value="修改redis pool" />
     <MESSAGE value="修改单元测试" />
     <MESSAGE value="修改 apis" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改 apis" />
+    <MESSAGE value="修改 apis 注释" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改 apis 注释" />
   </component>
 </project>
