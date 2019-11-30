@@ -2,19 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c75c0b72-c9d7-430a-929a-3926ba4286c7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/commands.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskr/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskr/apis/ApiBase.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/apis/ApiBase.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskr/apis/UserApi.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/apis/RestfulApis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskr/apis/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/apis/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskr/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskr/err.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/err.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskr/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskr/models/role.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/role.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskr/models/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/flaskr/redis_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/redis_db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_redis.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_redis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/apis/ApiBase.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/apis/ApiBase.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -167,7 +155,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575037059386</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="修改 apis">
+      <created>1575091013534</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1575091013534</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -188,6 +183,7 @@
     <MESSAGE value="修改redis的配置" />
     <MESSAGE value="修改redis pool" />
     <MESSAGE value="修改单元测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改单元测试" />
+    <MESSAGE value="修改 apis" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改 apis" />
   </component>
 </project>
