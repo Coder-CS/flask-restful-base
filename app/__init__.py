@@ -21,9 +21,9 @@ redis_db = RedisDB(**redis_config)
 db = SQLAlchemy()
 
 
-def create_app() -> Flask:
+def create_app(conf) -> Flask:
     app = Flask(__name__)
-    app.config.from_object(config)
+    app.config.from_object(conf)
 
     db.init_app(app)
     # 注册 api

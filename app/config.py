@@ -8,7 +8,7 @@ setting_path = root_path.joinpath("setting.json")
 
 setting = {"ENV": "dev"}
 if setting_path.exists():
-    with open(str(setting_path.resolve())) as fp:
+    with open(setting_path.resolve()) as fp:
         setting = {**setting, **json.load(fp)}
 
 
@@ -31,9 +31,14 @@ class ProductionConfig(ConfigBase):
     SQLALCHEMY_DATABASE_URI = setting.get('DATABASE_URI', f"sqlite:///{root_path.joinpath('data-prd.db')}")
 
 
+class TestConfig(ConfigBase):
+    SQLALCHEMY_DATABASE_URI = setting.get('DATABASE_URI', f"sqlite:///{root_path.joinpath('data-test.db')}")
+
+
 configs = {
     "dev": DevelopmentConfig,
-    "prd": ProductionConfig
+    "prd": ProductionConfig,
+    "test": TestConfig
 }
 
 

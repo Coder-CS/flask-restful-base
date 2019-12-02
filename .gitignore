@@ -130,3 +130,6 @@ dmypy.json
 
 # 设置文件
 setting.json
+
+# db 文件
+*.db
