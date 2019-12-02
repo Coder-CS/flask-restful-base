@@ -19,6 +19,12 @@ cd REPO_NAME
 
 ```
 python -m venv venv
+
+# windows 启动虚拟环境
+venv\Scripts\activate
+
+# Unix/MacOS
+. venv/bin/activate
 ```
 
 ### 安装依赖包
@@ -29,6 +35,15 @@ pip install -r requirements.txt
 
 ### 设置
 
+在根目录 (与app文件同级) 建立 setting.json 文件，所有的配置将优先从此文件读取，具体设置可查看 app 文件夹下的 config.py
 
-### 使用
+*以下字段必须设置*
+
+
+
+### 启动
+
+```shell script
+flask run
+```
 
