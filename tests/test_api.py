@@ -27,5 +27,5 @@ def client():
 def test_empty_db(client):
     """Start with a blank database."""
 
-    rv = client.get('/users/')
-    assert b'users' in rv.data
+    assert b'' in client.get('/users/sfasfas').data
+    assert b'sfasfas' in client.get('/users/').data

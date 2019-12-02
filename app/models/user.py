@@ -14,6 +14,12 @@ class User(db.Model):
         self.name = name
         self.password_hash = generate_password_hash(password)
 
+    @staticmethod
+    def add_user(email: str, name: str, password: str):
+        user = User(email, name, password)
+        db.session.add(user)
+        db.session.commit()
+
     @property
     def password(self):
         raise AttributeError('`password` is not a readable attribute')
