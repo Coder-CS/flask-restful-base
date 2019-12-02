@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c75c0b72-c9d7-430a-929a-3926ba4286c7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="b5c5840b-31b5-44aa-a3d4-d9eee50457a6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/flask-restful-base.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/flask-end-base.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands.py" beforeDir="false" afterPath="$PROJECT_DIR$/commands.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,26 +18,15 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ChangesViewManager" show_ignored="true" />
-  <component name="FavoritesManager">
-    <favorites_list name="flask-end-base" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1UElNBVKZqjuDrFukwsgXzVf4fz" />
+  <component name="ProjectId" id="1UPC2ZWrZWQJkTjmP5Ufo5BRCLW" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -45,139 +41,17 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in test_redis.py">
-    <configuration name="Unittests for test_redis.RedisTestCase.test_delete" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="flask-end-base" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_redis.RedisTestCase.test_delete&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for test_redis.RedisTestCase.test_save_get" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="flask-end-base" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_redis.RedisTestCase.test_save_get&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests in test_redis.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="flask-end-base" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_redis.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Python tests.Unittests in test_redis.py" />
-        <item itemvalue="Python tests.Unittests for test_redis.RedisTestCase.test_delete" />
-        <item itemvalue="Python tests.Unittests for test_redis.RedisTestCase.test_save_get" />
-      </list>
-    </recent_temporary>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c75c0b72-c9d7-430a-929a-3926ba4286c7" name="Default Changelist" comment="" />
-      <created>1574929592889</created>
+      <changelist id="b5c5840b-31b5-44aa-a3d4-d9eee50457a6" name="Default Changelist" comment="" />
+      <created>1575248636979</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1574929592889</updated>
+      <updated>1575248636979</updated>
     </task>
-    <task id="LOCAL-00001" summary="添加api">
-      <created>1575022960136</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1575022960136</updated>
-    </task>
-    <task id="LOCAL-00002" summary="修改redis的配置">
-      <created>1575023351835</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1575023351835</updated>
-    </task>
-    <task id="LOCAL-00003" summary="修改redis的配置">
-      <created>1575023480863</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1575023480863</updated>
-    </task>
-    <task id="LOCAL-00004" summary="修改redis的配置">
-      <created>1575024011977</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1575024011977</updated>
-    </task>
-    <task id="LOCAL-00005" summary="修改redis pool">
-      <created>1575033402994</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1575033402994</updated>
-    </task>
-    <task id="LOCAL-00006" summary="修改单元测试">
-      <created>1575034612537</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1575034612537</updated>
-    </task>
-    <task id="LOCAL-00007" summary="修改单元测试">
-      <created>1575037059386</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1575037059386</updated>
-    </task>
-    <task id="LOCAL-00008" summary="修改 apis">
-      <created>1575091013534</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1575091013534</updated>
-    </task>
-    <task id="LOCAL-00009" summary="修改 apis 注释">
-      <created>1575091412140</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1575091412140</updated>
-    </task>
-    <task id="LOCAL-00010" summary="修改 .gitignore">
-      <created>1575091705998</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1575091705998</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -192,15 +66,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="添加api" />
-    <MESSAGE value="修改redis的配置" />
-    <MESSAGE value="修改redis pool" />
-    <MESSAGE value="修改单元测试" />
-    <MESSAGE value="修改 apis" />
-    <MESSAGE value="修改 apis 注释" />
-    <MESSAGE value="修改 .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改 .gitignore" />
   </component>
 </project>

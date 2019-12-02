@@ -3,11 +3,11 @@ __version__ = "0.1.1"
 
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
-from app.config import configs, env
+from app.config import configs, setting
 from app.apis import UserApi
 from app.redis_db import RedisDB
 
-config_name = env.get("ENV", "dev")
+config_name = setting.get("ENV", "dev")
 config = configs.get(config_name)
 
 redis_config = {

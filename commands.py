@@ -1,4 +1,4 @@
-from app.config import env
+from app.config import setting
 from app import create_app
 import click
 

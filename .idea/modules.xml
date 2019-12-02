@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/flask-end-base.iml" filepath="$PROJECT_DIR$/.idea/flask-end-base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/flask-restful-base.iml" filepath="$PROJECT_DIR$/.idea/flask-restful-base.iml" />
     </modules>
   </component>
 </project>
