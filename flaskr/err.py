@@ -1,4 +1,4 @@
-from server.response import fail_response
+from flaskr.response import fail_response
 
 
 class InvalidUsage(Exception):

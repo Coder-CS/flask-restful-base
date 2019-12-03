@@ -1,12 +1,12 @@
-from server.err import InvalidUsage
+from flaskr.err import InvalidUsage
 
 __version__ = "0.1.1"
 
 from flask import Flask, jsonify
 from flask_sqlalchemy import SQLAlchemy
-from server.config import configs, setting
-from server.redis_db import RedisDB
-from server.response import error_response
+from flaskr.config import configs, setting
+from flaskr.redis_db import RedisDB
+from flaskr.response import error_response
 
 
 config_name = setting.get("ENV", "dev")
@@ -35,7 +35,7 @@ def create_app() -> Flask:
 
 
 def register_api(app: Flask):
-    from server.apis import LoginApi, LogoutApi
+    from flaskr.apis import LoginApi, LogoutApi
     LoginApi.register_api(app)
     LogoutApi.register_api(app)
 

@@ -2,12 +2,12 @@ from flask import Flask
 from flask import request
 from flask.views import MethodView
 from flask_sqlalchemy import SQLAlchemy
-from server.apis.ApiBase import ApiBase
-from server.models import User
-from server.token import TokenState, Token
-from server import redis_db, config
-from server.response import error_response, success_response, fail_response
-from server.email import is_valid_email
+from flaskr.apis.ApiBase import ApiBase
+from flaskr.models import User
+from flaskr.token import TokenState, Token
+from flaskr import redis_db, config
+from flaskr.response import error_response, success_response, fail_response
+from flaskr.email import is_valid_email
 
 SECRET_KEY = config.SECRET_KEY
 AUTH_TOKEN_SECONDS = 259200  # 3 天

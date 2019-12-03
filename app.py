@@ -1,8 +1,8 @@
 import click
 from flask import jsonify
 
-from server import create_app, db, InvalidUsage, error_response
-from server.models import User
+from flaskr import create_app, db, InvalidUsage, error_response
+from flaskr.models import User
 
 app = create_app()
 

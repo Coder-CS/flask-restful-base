@@ -4,7 +4,7 @@ import pytest
 from itsdangerous import BadSignature
 
 sys.path.append(".")
-from server.token import TokenState, Token
+from flaskr.token import TokenState, Token
 
 
 def test_token():
