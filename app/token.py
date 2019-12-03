@@ -1,3 +1,4 @@
+import time
 from enum import Enum
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer, SignatureExpired, BadSignature
 
@@ -10,15 +11,16 @@ class TokenState(Enum):
 
 class Token(object):
     @staticmethod
-    def generate_token(secret_key: str, expiration: int = 600, **kwargs) -> bytes:
+    def generate_token(id, secret_key: str, expiration: int = 600, **kwargs) -> str:
         s = Serializer(secret_key, expires_in=expiration)
-        return s.dumps({**kwargs})
+        return str(s.dumps({"id": id, "time": time.time(), **kwargs}), "utf-8")
 
     @staticmethod
     def verify_token(token: str, secret_key: str) -> (TokenState, dict):
         s = Serializer(secret_key)
         try:
-            data = s.loads(token)
+            token_byte = bytes(token, "utf8")
+            data = s.loads(token_byte)
         except SignatureExpired:
             return TokenState.Expired, {}  # valid token, but expired
         except BadSignature:
