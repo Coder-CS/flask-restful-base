@@ -121,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575369353539</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="修改测试">
+      <created>1575369742498</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1575369742498</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -148,6 +155,7 @@
     <MESSAGE value="添加 coverage" />
     <MESSAGE value="修改 reids key 读取前缀" />
     <MESSAGE value="修改令牌不过期的bug" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改令牌不过期的bug" />
+    <MESSAGE value="修改测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改测试" />
   </component>
 </project>

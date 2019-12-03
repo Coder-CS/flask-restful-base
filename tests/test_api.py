@@ -65,6 +65,7 @@ def test_login(client):
 
 
 def test_login_fail(client):
+    # 账号或密码错误
     data = {
         'email': "email", 'password': 'asf'
     }
@@ -77,6 +78,8 @@ def test_login_fail(client):
     rv = client.post("/api/login", json=data)
     data = rv.get_json()
     assert data.get("msg") == "用户名或密码错误"
+
+    # 账号为空
     data = {
         "email": "", "password": ""
     }
@@ -89,6 +92,8 @@ def test_login_fail(client):
     rv = client.post("/api/login", json=data)
     data = rv.get_json()
     assert data.get("msg") == "email 不能为空"
+
+    # 密码为空
     data = {
         "email": "as", "password": ""
     }
