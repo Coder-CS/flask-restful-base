@@ -11,10 +11,10 @@ from flaskr.email import is_valid_email
 
 SECRET_KEY = config.SECRET_KEY
 AUTH_TOKEN_SECONDS = 259200  # 3 天
-
+LOGIN_REDIS_KEY_PREFIX = "login_token"
 
 class LoginApi(ApiBase):
-    redis_key_prefix = "login_token"
+
     @classmethod
     def register_api(cls, app: Flask):
         cls._register_api(app, "login", "/login", "token")
@@ -25,7 +25,7 @@ class LoginApi(ApiBase):
         :param token: 请求的令牌
         :return: 用户信息
         """
-        info = self.check_token(token, SECRET_KEY, self.redis_key_prefix)
+        info = self.check_token(token, SECRET_KEY, LOGIN_REDIS_KEY_PREFIX)
         if info.get("status") == "success":
             data = info.get("data")
             user = User.query.filter_by(id=data.get("id")).first()
@@ -37,7 +37,7 @@ class LoginApi(ApiBase):
                 }
                 return success_response("用户信息", user_data)
             else:
-                key = self.get_redis_key(self.redis_key_prefix, user.id)
+                key = self.get_redis_key(LOGIN_REDIS_KEY_PREFIX, user.id)
                 redis_db.delete(key)
                 return fail_response("无效的令牌")
         return info
@@ -56,7 +56,7 @@ class LoginApi(ApiBase):
         user = User.query.filter_by(email=email).first()
         if user and user.verify_password(password):
             token = Token.generate_token(user.id, SECRET_KEY, AUTH_TOKEN_SECONDS)
-            key = self.get_redis_key(self.redis_key_prefix, user.id)
+            key = self.get_redis_key(LOGIN_REDIS_KEY_PREFIX, user.id)
             redis_db.set(key, token, AUTH_TOKEN_SECONDS)
             return success_response("登录成功", {"token": token})
         else:
@@ -68,7 +68,7 @@ class LoginApi(ApiBase):
         :param token: 请求的令牌
         :return: 新的令牌
         """
-        info = self.check_token(token, SECRET_KEY, self.redis_key_prefix)
+        info = self.check_token(token, SECRET_KEY, LOGIN_REDIS_KEY_PREFIX)
         if info.get("status") == "success":
             data = info.get("data")
             user = User.query.filter_by(id=data.get("id")).first()
@@ -76,7 +76,7 @@ class LoginApi(ApiBase):
                 new_token = Token.generate_token(user.id, SECRET_KEY, AUTH_TOKEN_SECONDS)
                 return success_response("新的令牌", {"token": new_token})
             else:
-                key = self.get_redis_key(self.redis_key_prefix, user.id)
+                key = self.get_redis_key(LOGIN_REDIS_KEY_PREFIX, user.id)
                 redis_db.delete(key)
                 return fail_response("无效的令牌")
         return info
@@ -90,10 +90,10 @@ class LogoutApi(ApiBase):
         cls._register_api(app, "logout", "/logout", "token")
 
     def delete(self, token):
-        info = self.check_token(token, SECRET_KEY, self.redis_key_prefix)
+        info = self.check_token(token, SECRET_KEY, LOGIN_REDIS_KEY_PREFIX)
         if info.get("status") == "success":
             data = info.get("data")
-            key = self.get_redis_key(self.redis_key_prefix, data.get("id"))
+            key = self.get_redis_key(LOGIN_REDIS_KEY_PREFIX, data.get("id"))
             redis_db.delete(key)
             return success_response("退出登录")
         return info

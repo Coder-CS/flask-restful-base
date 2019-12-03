@@ -1,24 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5c5840b-31b5-44aa-a3d4-d9eee50457a6" name="Default Changelist" comment="">
+    <list default="true" id="b5c5840b-31b5-44aa-a3d4-d9eee50457a6" name="Default Changelist" comment="添加 coverage">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/apis/ApiBase.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/apis/ApiBase.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/apis/RestfulApis.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/apis/RestfulApis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/apis/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/apis/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/email.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/email.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/err.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/err.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/models/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/models/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/models/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/redis_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/redis_db.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/response.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/response.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/token.py" beforeDir="false" afterPath="$PROJECT_DIR$/flaskr/token.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_api.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_basics.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_basics.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_redis.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_redis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +28,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -117,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575358033173</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="添加 coverage">
+      <created>1575358693251</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1575358693251</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -141,6 +134,7 @@
     <MESSAGE value="添加用户api" />
     <MESSAGE value="完成用户api" />
     <MESSAGE value="app 文件夹重命名 server" />
-    <option name="LAST_COMMIT_MESSAGE" value="app 文件夹重命名 server" />
+    <MESSAGE value="添加 coverage" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加 coverage" />
   </component>
 </project>
