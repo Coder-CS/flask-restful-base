@@ -1,12 +1,12 @@
-from app.err import InvalidUsage
+from server.err import InvalidUsage
 
 __version__ = "0.1.1"
 
 from flask import Flask, jsonify
 from flask_sqlalchemy import SQLAlchemy
-from app.config import configs, setting
-from app.redis_db import RedisDB
-from app.response import error_response
+from server.config import configs, setting
+from server.redis_db import RedisDB
+from server.response import error_response
 
 
 config_name = setting.get("ENV", "dev")
@@ -35,19 +35,7 @@ def create_app() -> Flask:
 
 
 def register_api(app: Flask):
-    from app.apis import LoginApi, LogoutApi
+    from server.apis import LoginApi, LogoutApi
     LoginApi.register_api(app)
     LogoutApi.register_api(app)
 
-
-app = create_app()
-
-
-@app.errorhandler(InvalidUsage)
-def handle_invalid_usage(error):
-    return jsonify(error.to_dict())
-
-
-@app.errorhandler(404)
-def page_not_found(error):
-    return error_response("无效的请求"), 404

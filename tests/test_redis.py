@@ -1,5 +1,5 @@
 import unittest
-from app.redis_db import RedisDB
+from server.redis_db import RedisDB
 
 redis_config = {
     "host": "127.0.0.1",

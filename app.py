@@ -1,6 +1,20 @@
 import click
-from app import create_app, db, app
-from app.models import User
+from flask import jsonify
+
+from server import create_app, db, InvalidUsage, error_response
+from server.models import User
+
+app = create_app()
+
+
+@app.errorhandler(InvalidUsage)
+def handle_invalid_usage(error):
+    return jsonify(error.to_dict())
+
+
+@app.errorhandler(404)
+def page_not_found(error):
+    return error_response("无效的请求"), 404
 
 
 @app.cli.command("init_db")

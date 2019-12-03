@@ -2,17 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5c5840b-31b5-44aa-a3d4-d9eee50457a6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/apis/ApiBase.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/apis/ApiBase.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/apis/RestfulApis.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/apis/RestfulApis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/err.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/err.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/role.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/response.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/token.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/token.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/commands.py" beforeDir="false" afterPath="$PROJECT_DIR$/commands.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/apis/ApiBase.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/apis/ApiBase.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/apis/RestfulApis.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/apis/RestfulApis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/apis/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/apis/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/email.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/email.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/err.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/err.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/models/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/redis_db.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/redis_db.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/response.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/response.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/token.py" beforeDir="false" afterPath="$PROJECT_DIR$/server/token.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_api.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_api.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_basics.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_basics.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_command.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_redis.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_redis.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +102,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575282064680</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="完成用户api">
+      <created>1575357565913</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1575357565913</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -119,6 +131,7 @@
     <MESSAGE value="添加 requirements.txt" />
     <MESSAGE value="添加测试" />
     <MESSAGE value="添加用户api" />
-    <option name="LAST_COMMIT_MESSAGE" value="添加用户api" />
+    <MESSAGE value="完成用户api" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成用户api" />
   </component>
 </project>

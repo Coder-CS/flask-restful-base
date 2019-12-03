@@ -7,9 +7,9 @@ from flask_sqlalchemy import SQLAlchemy
 import pytest
 
 sys.path.append(".")
-from app import create_app, db
-from app.models import User
-from app.config import TestConfig
+from server import create_app, db
+from server.models import User
+from server.config import TestConfig
 
 
 

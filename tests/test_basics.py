@@ -4,7 +4,7 @@ import pytest
 from itsdangerous import BadSignature
 
 sys.path.append(".")
-from app.token import TokenState, Token
+from server.token import TokenState, Token
 
 
 def test_token():

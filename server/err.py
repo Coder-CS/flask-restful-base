@@ -1,4 +1,4 @@
-from app.response import fail_response
+from server.response import fail_response
 
 
 class InvalidUsage(Exception):

@@ -2,9 +2,9 @@ from abc import abstractmethod
 from flask import Flask, jsonify
 from flask.views import MethodView
 
-from app.token import Token, TokenState
-from app import redis_db
-from app.response import error_response, success_response, fail_response
+from server.token import Token, TokenState
+from server import redis_db
+from server.response import error_response, success_response, fail_response
 
 
 class ApiBase(MethodView):
