@@ -92,8 +92,9 @@ def test_login(client):
     assert data.get("msg") == "无效的令牌"
     rv = client.put(f"/api/login/{token}")
     data = rv.json
-    assert token != data.get("data").get("token")
-    rv = client.delete(f"/api/logout/{token}")
+    new_token = data.get("data").get("token")
+    assert token != new_token
+    rv = client.delete(f"/api/logout/{new_token}")
     data = rv.json
     assert data.get("msg") == "退出登录"
 

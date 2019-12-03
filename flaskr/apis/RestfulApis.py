@@ -71,12 +71,13 @@ class LoginApi(ApiBase):
         info = self.check_token(token, SECRET_KEY, LOGIN_REDIS_KEY_PREFIX)
         if info.get("status") == "success":
             data = info.get("data")
+            key = self.get_redis_key(LOGIN_REDIS_KEY_PREFIX, data.get("id"))
             user = User.query.filter_by(id=data.get("id")).first()
             if user:
                 new_token = Token.generate_token(user.id, SECRET_KEY, AUTH_TOKEN_SECONDS)
+                redis_db.set(key, new_token)
                 return success_response("新的令牌", {"token": new_token})
             else:
-                key = self.get_redis_key(LOGIN_REDIS_KEY_PREFIX, user.id)
                 redis_db.delete(key)
                 return fail_response("无效的令牌")
         return info
