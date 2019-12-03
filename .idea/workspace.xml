@@ -114,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575366244379</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="修改令牌不过期的bug">
+      <created>1575369353539</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1575369353539</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -140,6 +147,7 @@
     <MESSAGE value="app 文件夹重命名 server" />
     <MESSAGE value="添加 coverage" />
     <MESSAGE value="修改 reids key 读取前缀" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改 reids key 读取前缀" />
+    <MESSAGE value="修改令牌不过期的bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改令牌不过期的bug" />
   </component>
 </project>
