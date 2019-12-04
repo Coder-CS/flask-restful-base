@@ -2,11 +2,7 @@ import json
 import os
 import sys
 import tempfile
-
-from flask_sqlalchemy import SQLAlchemy
 import pytest
-
-sys.path.append(".")
 from flaskr import create_app, db
 from flaskr.models import User
 from flaskr.config import TestConfig

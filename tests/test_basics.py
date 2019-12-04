@@ -1,9 +1,6 @@
 import sys
-
 import pytest
 from itsdangerous import BadSignature
-
-sys.path.append(".")
 from flaskr.token import TokenState, Token
 
 
