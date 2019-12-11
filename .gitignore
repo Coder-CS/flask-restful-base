@@ -133,3 +133,5 @@ setting.json
 
 # db 文件
 *.db
+
+.idea/

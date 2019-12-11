@@ -1,12 +1,12 @@
-from flaskr.err import InvalidUsage
+from werkzeug.security import generate_password_hash
 
 __version__ = "0.1.1"
 
 from flask import Flask, jsonify
 from flask_sqlalchemy import SQLAlchemy
-from flaskr.config import configs, setting
-from flaskr.redis_db import RedisDB
-from flaskr.response import error_response
+from app.config import configs, setting
+from app.redis_db import RedisDB
+from app.response import error_response
 
 
 config_name = setting.get("ENV", "dev")
@@ -29,13 +29,17 @@ def create_app() -> Flask:
 
     db.init_app(app)
     # 注册 api
-    register_api(app)
+    from app.apis import register_apis
+    register_apis(app)
+    # 注册命令
+    from app.commands import register_commands
+    register_commands(app)
+    # 注册错误处理
+    from app.error_handlers import register_error_handlers
+    register_error_handlers(app)
 
     return app
 
 
-def register_api(app: Flask):
-    from flaskr.apis import LoginApi, LogoutApi
-    LoginApi.register_api(app)
-    LogoutApi.register_api(app)
+
 

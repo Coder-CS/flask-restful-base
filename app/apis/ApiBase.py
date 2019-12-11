@@ -1,10 +1,10 @@
 from abc import abstractmethod
-from flask import Flask, jsonify
+from flask import Flask
 from flask.views import MethodView
 
-from flaskr.token import Token, TokenState
-from flaskr import redis_db
-from flaskr.response import error_response, success_response, fail_response
+from app.token import Token, TokenState
+from app import redis_db
+from app.response import error_response, success_response
 
 
 class ApiBase(MethodView):
@@ -31,7 +31,9 @@ class ApiBase(MethodView):
             return False, "没有有效数据"
         for arg in args:
             test = json.get(arg)
-            if test is None or len(test.strip()) == 0:
+            if test is None:
+                return False, f"{arg} 不能为空"
+            if type(test) is str and len(test.strip()) == 0:
                 return False, f"{arg} 不能为空"
         return True, "验证通过"
 

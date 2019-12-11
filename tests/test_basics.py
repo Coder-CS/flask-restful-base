@@ -1,7 +1,5 @@
 import sys
-import pytest
-from itsdangerous import BadSignature
-from flaskr.token import TokenState, Token
+from app.token import TokenState, Token
 
 
 def test_token():

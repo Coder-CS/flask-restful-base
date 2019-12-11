@@ -1,1 +1,0 @@
-from flaskr.models.user import *

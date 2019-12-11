@@ -1,0 +1,6 @@
+{
+  "APP_NAME": "hd-server",
+  "SQLALCHEMY_DATABASE_URI": "mysql+pymysql://root:msqpass123@mysql:3306/hd_server",
+  "ENV": "prd",
+  "REDIS_HOST": "redis"
+}
