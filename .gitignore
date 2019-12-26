@@ -135,3 +135,4 @@ setting.json
 *.db
 
 .idea/
+.vscode/
